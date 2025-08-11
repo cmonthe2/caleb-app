@@ -1,0 +1,7 @@
+  tasks:
+    - name: Ensure application is running
+      ansible.builtin.systemd:
+        name: myapp
+        state: started
+  tags: install_dependencies
+
