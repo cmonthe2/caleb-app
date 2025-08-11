@@ -1,0 +1,11 @@
+---
+- name: Clone app repository
+  git:
+    repo: "https://github.com/your-org/your-app.git"
+    dest: /opt/app
+    version: main
+
+- name: Install app dependencies
+  command:
+    cmd: npm install
+    chdir: /opt/app

@@ -1,0 +1,15 @@
+[Unit]
+Description=Node.js App
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /opt/app/app.js
+Restart=always
+User=nobody
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/opt/app
+
+[Install]
+WantedBy=multi-user.target

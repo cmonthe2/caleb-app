@@ -1,0 +1,10 @@
+---
+- name: Install Node.js and Git
+  package:
+    name:
+      - nodejs
+      - npm
+      - git
+    state: present
+
+
