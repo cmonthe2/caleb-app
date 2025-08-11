@@ -3,4 +3,3 @@
   hosts: app_servers
   become: yes
   roles:
-    - app
